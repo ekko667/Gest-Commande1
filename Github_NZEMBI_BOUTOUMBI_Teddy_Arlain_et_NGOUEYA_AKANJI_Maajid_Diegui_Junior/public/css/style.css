@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 2.5px;
+}
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.col-3 {
+    height: 100vh;
+}
+
+.col-9 {
+    height: 100vh;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgb(90, 88, 88);
+}
+
+.navbar {
+    border-radius: 5px;
+}
+
+
+
+.text-content {
+    margin-bottom: 0; 
+}
+
+.text-content p {
+    margin-bottom: 0; 
+    line-height: 1.6;
+}
+
+.btn {
+    margin-top: 0; 
+}
+
+
+.image-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.image-wrapper img {
+    height: calc(100% - 10px);
+    width: auto; 
+    object-fit: contain; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.list-group-item {
+    cursor: pointer;
+}
+
+
+
+.cursor-hover {
+    cursor: pointer;
+}
+
+
+footer {
+    font-family: 'Agency FB';
+    border-radius: 0 0 7px 7px ;
+}
+
+.mr-1 {
+    margin-right: 5px !important;
+}

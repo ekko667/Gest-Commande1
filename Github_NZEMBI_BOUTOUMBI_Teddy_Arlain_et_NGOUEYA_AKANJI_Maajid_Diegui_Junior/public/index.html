@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!--<link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+     
+
+    <!--<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+    <!--<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+    <script src="./bootstrap-5.3.3-dist/jquery/jquery-3.7.1.min.js"></script>
+
+
+</head>
+<body>
+    <section class="row">
+        <nav class="col-3" style="max-height: 100vh; overflow-y: auto; ">
+
+            <br><br><br>
+
+            <div class="d-grid gap-2 col-12 mx-auto">
+                <button class="btn btn-primary fonct1" type="button">Gestion des ventes et des relations clients</button>
+            </div>                           
+            <ul class="list-group list1" id="listId">
+                <li class="list-group-item onglet1">Suivi des prospects et des clients</li>
+                <li class="list-group-item onglet2">Gestion des opportunités commerciales et des devis</li>
+                <li class="list-group-item onglet3">Suivi des commandes et des paiements</li>
+                <li class="list-group-item onglet4">SAnalyse des performances des ventes</li>
+                <li class="list-group-item onglet5">Gestion des campagnes marketing</li>
+            </ul>
+
+            <div class="d-grid gap-2 col-12 mx-auto">
+                <button class="btn btn-primary fonct2" type="button">Gestion comptable et financière</button>
+            </div>                         
+            <ul class="list-group list2">
+                <li class="list-group-item onglet6">Enregistrement des transactions (factures, recettes, dépenses)</li>
+                <li class="list-group-item onglet7">Gestion des budgets et des prévisions financières.</li>
+                <li class="list-group-item onglet8">Génération des bilans, comptes de résultats et déclarations fiscales</li>
+                <li class="list-group-item onglet9">Suivi des paiements (clients et fournisseurs).</li>
+            </ul>
+
+            <div class="d-grid gap-2 col-12 mx-auto">
+                <button class="btn btn-primary fonct3" type="button">Gestion des stocks et des achats</button>
+            </div>                     
+            <ul class="list-group list3">
+                <li class="list-group-item onglet10">Suivi des niveaux de stock en temps réel</li>
+                <li class="list-group-item onglet11 btn-gest-com">Gestion des commandes fournisseurs</li>
+                <li class="list-group-item onglet12">Prévisions de réapprovisionnement.</li>
+                <li class="list-group-item onglet13">Gestion des entrepôts et des inventaires</li>
+            </ul>
+
+            <div class="d-grid gap-2 col-12 mx-auto">
+                <button class="btn btn-primary fonct4" type="button">Ressources humaines (RH)</button>
+            </div>                  
+            <ul class="list-group list4">
+                <li class="list-group-item onglet14">Gestion des fiches employés</li>
+                <li class="list-group-item onglet15">Suivi des heures travaillées et gestion des plannings.</li>
+                <li class="list-group-item onglet16">Gestion des salaires et des fiches de paie.</li>
+                <li class="list-group-item onglet17">Suivi des absences, congés et formations</li>
+            </ul>
+
+            <button type="button" class="btn btn-outline-primary col-12 fonct0">MASQUER TOUT</button>
+
+
+
+        </nav>
+    
+        <section class="col-9" style="max-height: 100vh; overflow-y: auto; ">
+            <header>
+
+                <nav class="navbar navbar-light bg-primary">
+                    <div class="container-fluid">
+                        <div class="navbar-brand">
+                            <button class="btn btn-outline-light me-2 fonct0" type="button">Accueil</button>
+                            <button class="btn btn-sm btn-outline-light" type="button">Compte</button>
+                        </div>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+                
+            </header>
+    
+            <main class="main">
+
+                <section class="home container mt-5">
+                    <div class="row align-items-stretch">
+
+                        <div class="col-lg-6 text-center text-lg-start d-flex flex-column justify-content-between">
+                            <div class="text-content">
+                                <h1 class="display-1 fw-bold text-primary">PRO<span class="text-secondary">GEST</span></h1>
+                                <h4 class="text-muted fw-semibold">Une application révolutionnaire</h4>
+                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur <br>
+                                    Lorem ipsum dolor sit amet consectetur <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur <br>
+                                Lorem ipsum dolor sit amet consectetur <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                </div>
+                            <a href="#" class="btn btn-primary px-4 py-2 shadow-sm mt-2">PARCOURRIR</a>
+                        </div>
+                
+                        <div class="col-lg-6">
+                            <div class="image-wrapper h-100">
+                                <img src="ressources/gestionE.webp" class="img-fluid rounded shadow-lg" alt="Gestion Illustration">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+
+                <section class="container mt-4">
+                    <div class="row gx-3 gy-3"> 
+
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gestion des ventes et des relations clients</h5>
+                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, esse inventore! Minima autem sint dolorem?</p>
+                                    <button class="btn btn-primary fonct1">Voir tout</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gestion comptable et financière</h5>
+                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, esse inventore! Minima autem sint dolorem?</p>
+                                    <button class="btn btn-primary fonct2">Voir tout</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gestion des stocks et des achats</h5>
+                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, esse inventore! Minima autem sint dolorem?</p>
+                                    <button class="btn btn-primary fonct3">Voir tout</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ressources humaines (RH)</h5>
+                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, esse inventore! Minima autem sint dolorem?</p>
+                                    <button class="btn btn-primary fonct4">Voir tout</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                
+
+
+                <!--
+                <ul class="nav nav-tabs d-flex justify-content-between" id="myTab" role="tablist" style="flex-wrap: nowrap;">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fonct1" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                            GESTION DES VENTES ET DES RELATIONS CLIENTS
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fonct2" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                            GESTION COMPTABLE ET FINANCIERE
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fonct3" id="contact-tab-1" data-bs-toggle="tab" data-bs-target="#contact-tab-pane-1" type="button" role="tab" aria-controls="contact-tab-pane-1" aria-selected="false">
+                            GESTION DES STOCKS ET DES ACHATS
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fonct4" id="contact-tab-2" data-bs-toggle="tab" data-bs-target="#contact-tab-pane-2" type="button" role="tab" aria-controls="contact-tab-pane-2" aria-selected="false">
+                            RESSOURCES HUMAINES (RH)
+                        </button>
+                    </li>
+                </ul>
+                -->             
+
+
+
+                <section class="container mt-5 sous-fonct1">
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Suivi des prospects et des clients</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Gestion des opportunités commerciales et des devis</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Suivi des commandes et des paiements</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Analyse des performances des ventes</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Gestion des campagnes marketing</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">This card will take the full width of the row because it's the 5th card.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="container mt-5 sous-fonct2">
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Enregistrement des transactions (factures, recettes, dépenses)</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Gestion des budgets et des prévisions financières.</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Génération des bilans, comptes de résultats et déclarations fiscales</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Suivi des paiements (clients et fournisseurs).</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                <section class="container mt-5 sous-fonct3">
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">SSuivi des niveaux de stock en temps réel</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover btn-gest-com">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Gestion des commandes fournisseurs</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">révisions de réapprovisionnement.</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Gestion des entrepôts et des inventaires</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="container mt-5 sous-fonct4">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Gestion des fiches employés</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">SSuivi des heures travaillées et gestion des plannings.</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 cursor-hover">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Gestion des salaires et des fiches de paie.</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <div class="card border-primary h-100">
+                                <div class="card-header">Suivi des absences, congés et formations</div>
+                                <div class="card-body text-primary">
+                                    <h5 class="card-title">Primary card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+            
+
+
+
+
+
+            <!--Partie gestion des commandes-->
+            <section class="gest-com">
+                <h1 class="display-1 fw-bold text-primary">PRO<span class="text-secondary">GEST</span></h1>
+                <h4 class="text-muted fw-semibold">GESTION DES COMMANDES FOURNISSEUR</h4><br><br>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs d-flex" style="font-family: 'Agency FB';">
+                    <li class="nav-item w-50">
+                        <a class="nav-link active text-center" id="tabId1" data-bs-toggle="tab" href="#home">
+                            MISE A JOUR DES COMMANDES
+                        </a>
+                    </li>
+                    <li class="nav-item w-50">
+                        <a class="nav-link text-center" id="tabId2" data-bs-toggle="tab" href="#menu1">
+                            VISUALISATION DES COMMANDES
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="home">
+                        <div class="container" id="bodyId1">
+                            <form id="formEtudiantId" class="form-l" onsubmit="return false;">
+                                <!-- Conteneur principal pour aligner les infos sur une ligne -->
+                                <div class="row">
+                                    <!-- Bloc info1 -->
+                                    <div class="col-4 info1">
+                                        <div class="d-flex flex-column">
+                                            <div class="form-group mb-3">
+                                                <label for="numero-com">Numéro de la commande</label>
+                                                <input type="text" class="form-control w-100" id="numCId" placeholder="Entrez le numéro de la commande">
+                                                <div id="NCnumCId" hidden></div>
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <label for="date-com">Date de la commande</label>
+                                                <input type="text" class="form-control w-100" id="dateCId" placeholder="Entrez la date de la commande">
+                                                <div id="DCdateCId" hidden></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="xxx">XXX</label>
+                                                <input type="text" class="form-control w-100" id="xxx" placeholder="Entrez le xxx">
+                                                <div id="XXxxx" hidden></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Bloc info2 -->
+                                    <div class="col-4 info2">
+                                        <div class="d-flex flex-column">
+                                            <div class="form-group mb-3">
+                                                <label for="nomF">Nom du fournisseur</label>
+                                                <input type="text" class="form-control w-100" id="nomFId" placeholder="Entrez le nom du fournisseur">
+                                                <div id="NFnomFId" hidden></div>
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <label for="numero-four">Numéro du fournisseur</label>
+                                                <input type="number" class="form-control w-100" id="numFId" placeholder="Entrez le numero du fournisseur">
+                                                <div id="NFnumFId" hidden></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="adresse-four">Adresse fournisseur</label>
+                                                <input type="text" class="form-control w-100" id="adressId" placeholder="Entrez l'adresse du fournisseur">
+                                                <div id="AFadressId" hidden></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Bloc info3 -->
+                                    <div class="col-4 info3">
+                                        <div class="d-flex flex-column">
+                                            <div class="form-group mb-3">
+                                                <label for="nom-prod">Nom du produit</label>
+                                                <input type="text" class="form-control w-100" id="prodId" placeholder="Entrez le nom du produit">
+                                                <div id="NPprodId" hidden></div>
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <label for="quantité">Quantité commandée</label>
+                                                <input type="number" class="form-control w-100" id="quantId" placeholder="Entrez la quantité commandée">
+                                                <div id="QPquantId" hidden></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="prix-unitaire">Prix unitaire</label>
+                                                <input type="number" class="form-control w-100" id="prixId" placeholder="Entrez le prix unitaire du produit">
+                                                <div id="PUprixId" hidden></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Boutons -->
+                                <div class="row mt-4">
+                                    <div class="col-6 mb-2">
+                                        <button class="btn btn-primary w-100" id="ValiderId">Insérer</button>
+                                    </div>
+                                    <div class="col-6 mb-2">
+                                        <button class="btn btn-success w-100" id="ModifierId">Modifier</button>
+                                    </div>
+                                    <div class="col-6 mb-2">
+                                        <button class="btn btn-warning w-100" id="EffacerId">Effacer</button>
+                                    </div>
+                                    <div class="col-6 mb-2">
+                                        <button class="btn btn-danger w-100" id="SupprimerId">Supprimer</button>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-info w-100" id="AfficherId">Afficher</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="menu1">
+                        <div class="container" id="bodyId2">
+                            <table class="table table-bordered table-striped table-condensed" id="table-id">
+                                <thead>
+                                    <tr>
+                                        <th>Numéro commande</th>
+                                        <th>Date commande</th>
+                                        <th>xxx</th>
+                                        <th>Nom fournisseur</th>
+                                        <th>Numéro fournisseur</th>
+                                        <th>Adresse fournisseur</th>
+                                        <th>Nom produit</th>
+                                        <th>Quantité</th>
+                                        <th>Prix unitaire</th>
+                                        <th>Modifier</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="menu2"></div>
+                        <div class="container" id="bodyId3">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+            <footer class="bg-primary text-white text-center py-3">
+                <div class="container">
+                    <p class="mb-0">@ 2025 MonSite. TOUS DROITS RESERVES</p>
+                    <p class="mb-0">
+                        <a href="#" class="text-white text-decoration-underline">Politique de confidentialité</a> | 
+                        <a href="#" class="text-white text-decoration-underline">Conditions d'utilisation</a>
+                    </p>
+                </div>
+            </footer>
+        </section>
+    
+    </section>
+
+    <script src="./js/process.js"></script>   
+
+
+    <!--<script src="./bootstrap-5.3.3-dist/"></script> -->
+    
+    <!--<script src="./bootstrap-5.3.3-dist/jquery/jquery-3.7.1.min.js"></script>-->
+
+    <!--<script src="bootstrap-5.0.2-dist/popper/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js" ></script>
+
+</body>
+</html>
